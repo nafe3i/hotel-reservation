@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
-import logo from "../assets/images/logo.jpg"
+import logo from "../assets/images/main-logo-transparent.png"
 import "./Header.css"
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -10,7 +10,7 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <Link to="/" className="logo">
-            <img src={logo} alt="Yakin Hotel" />
+            <img src={main-logo-transparent.png} alt="Yakin Hotel" />
           </Link>
 
           <button className="mobile-menu-button" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
