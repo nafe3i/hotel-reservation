@@ -2,6 +2,11 @@
 
 import { useState, useEffect } from "react"
 import axios from "axios"
+import HeroSection from "../components/HeroSection"
+import BookingForm from "../components/BookingForm"
+import FacilitiesSection from "../components/FacilitiesSection"
+import RoomsSection from "../components/RoomsSection"
+import TestimonialsSection from "../components/TestimonialsSection"
 import "./HomePage.css"
 
 const HomePage = () => {
@@ -32,11 +37,11 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-      {/* <HeroSection />
+      <HeroSection />
       <BookingForm />
       <FacilitiesSection />
       <RoomsSection rooms={featuredRooms} loading={loading} />
-      <TestimonialsSection testimonials={testimonials} loading={loading} /> */}
+      
     </div>
   )
 }

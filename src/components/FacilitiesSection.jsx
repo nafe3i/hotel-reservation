@@ -1,25 +1,25 @@
 import { Link } from "react-router-dom"
 import "./FacilitiesSection.css"
 
-// // Import icons
-// import swimmingPoolIcon from "../assets/icons/swimming-pool.svg"
-// import wifiIcon from "../assets/icons/wifi.svg"
-// import spaIcon from "../assets/icons/spa.svg"
-// import gymIcon from "../assets/icons/gym.svg"
-// import restaurantIcon from "../assets/icons/restaurant.svg"
-// import barIcon from "../assets/icons/bar.svg"
-// import parkingIcon from "../assets/icons/parking.svg"
-// import roomServiceIcon from "../assets/icons/room-service.svg"
+// Import icons
+import swimmingPoolIcon from "../assets/icons/swimming-pool.png"
+import wifiIcon from "../assets/icons/wifi.png"
+import turkey from "../assets/icons/turkey.png"
+import dumbbell from "../assets/icons/dumbbell.png"
+import gamecontroller from "../assets/icons/gamecontroller.png"
+import idea from "../assets/icons/idea.png"
+import washingmachine from "../assets/icons/washingmachine.png"
+import parking from "../assets/icons/parking.png"
 
 const facilities = [
   { id: 1, name: "Swimming Pool", icon: swimmingPoolIcon },
-  { id: 2, name: "Free WiFi", icon: wifiIcon },
-  { id: 3, name: "Spa", icon: spaIcon },
-  { id: 4, name: "Fitness Center", icon: gymIcon },
-  { id: 5, name: "Restaurant", icon: restaurantIcon },
-  { id: 6, name: "Bar", icon: barIcon },
-  { id: 7, name: "Parking", icon: parkingIcon },
-  { id: 8, name: "Room Service", icon: roomServiceIcon },
+  { id: 2, name: "WiFi", icon: wifiIcon },
+  { id: 3, name: "break", icon: turkey },
+  { id: 4, name: " dumbbell", icon: dumbbell },
+  { id: 5, name: "game center", icon: gamecontroller },
+  { id: 6, name: "24/7 light", icon: idea },
+  { id: 7, name: "washing-machine", icon: washingmachine },
+  { id: 8, name: "parking", icon: parking },
 ]
 
 const FacilitiesSection = () => {
@@ -27,7 +27,7 @@ const FacilitiesSection = () => {
     <section className="facilities-section">
       <div className="container">
         <h2 className="section-title">Our Facilities</h2>
-        <p className="section-subtitle">We offer a wide range of facilities to make your stay comfortable</p>
+        <p className="section-subtitle">We offer modern (5 star) hotel facilities for your comfort.</p>
 
         <div className="facilities-grid">
           {facilities.map((facility) => (
